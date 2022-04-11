@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
-/** div{
-    border: 1px solid white;
-}*/
-
-
-
 body{
     padding: 0px;
     margin: 0px;
@@ -208,7 +202,7 @@ h2
     text-align: center;
     justify-content: space-around;
     flex-basis: 100%;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 }
 
 .image33_1, .image33_2
@@ -313,17 +307,75 @@ label{
     h1{
         color: red;
     }
+    .block_logo{
+        max-width: 70%;
+    }
+    .block1{
+        flex-direction: column;
+        row-gap: 100px;
+        margin-top: 50px;
+    }
+    h1{
+        font-size: 48px;
+    }
+    .block6{
+        flex-direction: column;
+    }
+    .block31
+    {
+        padding-bottom: 60px;
+    }
+    .block32
+    {
+        padding-bottom: 60px;
+    }
+    .block6 {
+        padding-left: 10px;
+        padding-bottom: 20px;
+        padding-right: 10px;
+    }
+    .block61
+    {
+        text-align: center;
+    }
+    .block61 h1
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
 }
 @media (min-width: 768px) and (max-width: 991px) {
     /* стили для sm-устройств */
     h1{
         color: blue;
     }
+    .block1{
+        flex-direction: column;
+        row-gap: 100px;
+    }
+    .block12
+    {
+        text-align: center;
+    }
+    .block12 img{
+        max-width: 80%;
+        object-fit: contain;
+    }
+    .block3{
+        flex-direction: column;
+    }
+    .block6{
+        flex-direction: column;
+    }
 }
 @media (min-width: 991px) and (max-width: 1199px) {
     /* стили для md-устройств */
     h1{
         color: green;
+    }
+    .wrapper {
+        max-width: 1000px;
     }
 }
 

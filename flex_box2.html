@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex box for table layout</title>
+    <style>
+    .wrapper {
+        border: 1px solid silver;
+        width: 600px;
+        margin: auto;
+    }
+    .row{
+        display: flex;
+    }
+    .cell{
+        flex: 1;
+    }
+    .all_line{
+        text-align: center;
+    }
+    .wrapper>div
+    {
+        padding: 5px;
+    }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+<div class="all_line">
+    <h1>Employees Interest Survey Form</h1>
+</div>
+    <div class="row">
+    <div class="cell">
+        <label for="srv_name">Enter your name:</label>
+    </div>
+    <div class="cell">
+        <input type="text" name="srv_name" id="srv_name" maxlength="50" size="25" autofocus required>
+    </div>
+    </div>
+    <div class="row">
+        <div class="cell">
+            <label for="srv_name">Enter your name:</label>
+        </div>
+        <div class="cell">
+            <input type="text" name="srv_name" id="srv_name" maxlength="50" size="25" autofocus required>
+        </div>
+    </div>
+    <div class="row">
+        <div class="cell">
+            <label for="srv_name">Enter your name:</label>
+        </div>
+        <div class="cell">
+            <input type="text" name="srv_name" id="srv_name" maxlength="50" size="25" autofocus required>
+        </div>
+    </div>
+</div>
+</body>
+</html>

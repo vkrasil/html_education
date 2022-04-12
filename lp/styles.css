@@ -27,19 +27,21 @@ body{
 {
     margin-top: 100px;
     display: flex;
-    flex-wrap: wrap;
-    column-gap: 100px;
+    /*flex-wrap: wrap;*/
+    column-gap: 4.5%;
 }
 .block11
 {
     /*flex-basis: auto;*/
-    flex: 1;
+    /*flex: 1;*/
+    flex-basis: 635px;
+    max-width: 635px;
 }
-.block12
-{
-    /*flex-basis: auto;*/
-    flex: 1;
-}
+/*.block12*/
+/*{*/
+/*    !*flex-basis: auto;*!*/
+/*    flex: 1;*/
+/*}*/
 .block2
 {
     display: flex;
@@ -180,14 +182,11 @@ h2
 {
     flex: 1;
     padding: 0px 35px 120px 45px;
-    /*opacity: 50%;*/
-    /*z-index: 1;*/
 }
 .block4
 {
     text-align: center;
     padding-top: 80px;
-    /*z-index: 1;*/
 }
 .block5
 {
@@ -209,10 +208,7 @@ h2
 {
     text-align: center;
 }
-.block11, .block12
-{
-   /* border: 1px solid white;*/
-}
+
 .block11 {
     display: flex;
     flex-direction: column;
@@ -263,9 +259,7 @@ input, textarea{
     column-gap: 30px;
     row-gap: 30px;
 }
-.block1 div{
-    border: 1px solid white;
-}
+
 
 .block61
 {
@@ -305,7 +299,6 @@ img
 }
 
 .block61 h1{
-    /*margin-top: 100px;*/
     margin-bottom: 60px;
 }
 
@@ -315,30 +308,29 @@ label{
 
 
 @media (max-width: 767px) {
-    /* стили для xs-устройств */
+
     .social{
         column-gap: 12px;
     }
-    .block6 div{
-        border: 1px solid white;
-    }
-    h1{
-        color: red;
-    }
+    /*h1{*/
+    /*    color: red;*/
+    /*}*/
     .block_logo{
         max-width: 70%;
     }
     .block1{
-        flex-direction: column;
-        row-gap: 50px;
-        margin-top: 50px;
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: 100%;
+        /*flex-direction: column;*/
+        row-gap: 70px;
     }
     h1{
         font-size: 48px;
         line-height: 120%;
     }
     h2{
-        font-size: 38px;
+        font-size: 30px;
     }
     .block2{
         margin-top: 85px;
@@ -355,9 +347,7 @@ label{
         padding-bottom: 60px;
     }
     .block6 {
-        padding-left: 10px;
-        padding-bottom: 20px;
-        padding-right: 10px;
+        padding: 40px 10px 60px 10px;
     }
     .block61
     {
@@ -375,18 +365,24 @@ label{
         row-gap: 50px;
         column-gap: 15px;
     }
-    .metrics div{
-        border: 1px solid white;
+    .team img{
+        max-width: 70%;
     }
     .metrics
     {
         display: grid;
         grid-template-columns: 50% 50%;
+        padding-bottom: 70px;
+    }
+    .block4{
+        padding-top: 50px;
+    }
+    .block3{
+        margin-top: 150px;
     }
 
 }
 @media (min-width: 768px) and (max-width: 991px) {
-    /* стили для sm-устройств */
     .metrics
     {
         display: grid;
@@ -399,18 +395,25 @@ label{
         row-gap: 50px;
         column-gap: 15px;
     }
-    .block6 div{
-        border: solid 1px white;
+    .team img{
+        max-width: 70%;
     }
-    h1{
-        color: blue;
-    }
+
+    /*h1{*/
+    /*    color: blue;*/
+    /*}*/
     h2{
         font-size: 38px;
     }
     .block1{
-        flex-direction: column;
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: 100%;
+        /*flex-direction: column;*/
         row-gap: 50px;
+    }
+    .block2{
+        margin-top: 120px;
     }
     .block12
     {
@@ -425,16 +428,26 @@ label{
     }
     .block6{
         flex-direction: column;
-        padding-left: 12px;
+        padding: 60px 12px 80px 12px;
+        row-gap: 50px;
+    }
+    .block_logo{
+        margin-top: 50px;
+        max-width: 70%;
     }
 }
 @media (min-width: 991px) and (max-width: 1199px) {
-    /* стили для md-устройств */
 
+    .team img{
+        max-width: 90%;
+    }
     h1{
-        color: green;
+        /*color: green;*/
         font-size: 52px;
         line-height: 140%;
+    }
+    h2{
+        font-size: 42px;
     }
     .block31{
         padding-bottom: 80px;
@@ -448,7 +461,7 @@ label{
         padding-bottom: 100px;
     }
     .wrapper {
-        max-width: 1000px;
+        width: 85%;
     }
     .block1{
         column-gap: 40px;

@@ -6,7 +6,7 @@ body{
     font-family: 'Titillium Web', sans-serif;
     color: #FFFFFF;
     background: #292D32 url("images/back.svg") no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .wrapper
@@ -255,11 +255,16 @@ input, textarea{
 }
 .block6
 {
-    padding: 0px 0px 0px 50px;
+    padding: 100px 12px 120px 50px;
     margin-top: 100px;
     display: flex;
     /*flex-wrap: wrap;*/
     justify-content: space-between;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.block1 div{
+    border: 1px solid white;
 }
 
 .block61
@@ -268,11 +273,18 @@ input, textarea{
     flex-direction: column;
     flex-basis: 490px;
 }
+.block62
+{
+    /*flex-basis: 1000px;*/
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
 .social{
     display: flex;
     justify-content: space-between;
     column-gap: 30px;
-
 }
 .footer{
     display: flex;
@@ -293,7 +305,7 @@ img
 }
 
 .block61 h1{
-    margin-top: 100px;
+    /*margin-top: 100px;*/
     margin-bottom: 60px;
 }
 
@@ -304,6 +316,12 @@ label{
 
 @media (max-width: 767px) {
     /* стили для xs-устройств */
+    .social{
+        column-gap: 12px;
+    }
+    .block6 div{
+        border: 1px solid white;
+    }
     h1{
         color: red;
     }
@@ -312,11 +330,18 @@ label{
     }
     .block1{
         flex-direction: column;
-        row-gap: 100px;
+        row-gap: 50px;
         margin-top: 50px;
     }
     h1{
         font-size: 48px;
+        line-height: 120%;
+    }
+    h2{
+        font-size: 38px;
+    }
+    .block2{
+        margin-top: 85px;
     }
     .block6{
         flex-direction: column;
@@ -343,16 +368,49 @@ label{
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    .team
+    {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 50px;
+        column-gap: 15px;
+    }
+    .metrics div{
+        border: 1px solid white;
+    }
+    .metrics
+    {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
 
 }
 @media (min-width: 768px) and (max-width: 991px) {
     /* стили для sm-устройств */
+    .metrics
+    {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .team
+    {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 50px;
+        column-gap: 15px;
+    }
+    .block6 div{
+        border: solid 1px white;
+    }
     h1{
         color: blue;
     }
+    h2{
+        font-size: 38px;
+    }
     .block1{
         flex-direction: column;
-        row-gap: 100px;
+        row-gap: 50px;
     }
     .block12
     {
@@ -367,15 +425,34 @@ label{
     }
     .block6{
         flex-direction: column;
+        padding-left: 12px;
     }
 }
 @media (min-width: 991px) and (max-width: 1199px) {
     /* стили для md-устройств */
+
     h1{
         color: green;
+        font-size: 52px;
+        line-height: 140%;
+    }
+    .block31{
+        padding-bottom: 80px;
+    }
+    .block32{
+        padding-bottom: 80px;
+    }
+    .block6
+    {
+        padding-top: 80px;
+        padding-bottom: 100px;
     }
     .wrapper {
         max-width: 1000px;
     }
+    .block1{
+        column-gap: 40px;
+    }
+
 }
 

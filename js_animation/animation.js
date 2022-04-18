@@ -18,9 +18,9 @@ for (let eachImg of imgMembers) eachImg.onmousemove=onMouseMoveMember
 
 const divAbouts=document.getElementsByClassName('about_member')
 for (let eachAbout of divAbouts) eachAbout.onmouseleave=onMouseLeaveMember
-//divAbout1.onmouseleave=onMouseLeaveMember;
 
-// imgMember1.onmousemove=(e)=> {
+
+
 function onMouseMoveMember(e) {
     // console.log(e.target.id)
     const numberOfMember=e.target.id[e.target.id.length-1]
@@ -29,7 +29,7 @@ function onMouseMoveMember(e) {
         const divMember=document.getElementsByClassName(`div_member${numberOfMember}`)[0]
         //divMember.style.color = '#292D32'
         const divAbout = document.getElementById(`div_about${numberOfMember}`)
-        const boxDiv = divMember.getBoundingClientRect();
+        const boxDiv = divMember.getBoundingClientRect()
         const boxImage=e.target.getBoundingClientRect()
         e.target.style.position='fixed'
         e.target.style.left=boxImage.left.toString() + 'px'
@@ -62,11 +62,11 @@ function onMouseLeaveMember (e) {
     const divMember=document.getElementsByClassName(`div_member${numberOfMember}`)[0]
     const divAbout = document.getElementById(`div_about${numberOfMember}`)
     const imgMember=document.getElementById(`img_member${numberOfMember}`)
-    imgMember.style.transform=''
-    imgMember.style.width='auto'
-    imgMember.style.position='static'
-    imgMember.style.maxWidth='100%'
-    //divMember.style.color='white'
+    //imgMember.style.transform=''
+    //imgMember.style.width='auto'
+    //imgMember.style.position='static'
+    //imgMember.style.maxWidth='100%'
+    imgMember.style.cssText=''
     divAbout.style.opacity='0%'
     divAbout.style.visibility='hidden'
     const divPName=document.getElementById(`dm${numberOfMember}p_name`)
@@ -79,7 +79,6 @@ function onMouseLeaveMember (e) {
 
 const btnRow=document.getElementById('btn_row')
 const btnGrid=document.getElementById('bnt_grid')
-const btnTransform=document.getElementById('bnt_transform')
 
 btnRow.onclick=()=>{
     const blockMembers=document.querySelector('.block_members')
@@ -90,10 +89,4 @@ btnRow.onclick=()=>{
 btnGrid.onclick=()=>{
     const blockMembers=document.querySelector('.block_members')
     blockMembers.style.gridTemplateColumns='1fr 1fr'
-}
-
-btnTransform.onclick=()=>{
-    const imgTest=document.getElementById('img_member1')
-     imgTest.style.position='static'
-    //imgTest.style.transform='translate(350px,0)'
 }

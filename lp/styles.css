@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
-body{
+body
+{
     padding: 0px;
     margin: 0px;
     font-family: 'Titillium Web', sans-serif;
@@ -8,48 +9,37 @@ body{
     background: #292D32 url("images/back.svg") no-repeat;
     background-size: cover;
 }
-
-.wrapper
+.block_wrapper
 {
     max-width: 1530px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     background: transparent;
-
 }
 .block_logo
 {
     margin-top: 70px;
 }
-
-.block1
+.block_welcome
 {
     margin-top: 100px;
     display: flex;
-    /*flex-wrap: wrap;*/
     column-gap: 4.5%;
 }
-.block11
+.block_welcomeLeft
 {
-    /*flex-basis: auto;*/
-    /*flex: 1;*/
     flex-basis: 635px;
     max-width: 635px;
 }
-/*.block12*/
-/*{*/
-/*    !*flex-basis: auto;*!*/
-/*    flex: 1;*/
-/*}*/
-.block2
+.block_intro
 {
     display: flex;
     flex-direction: column;
     margin-top: 170px;
     max-width: 1140px;
 }
-.block2 p
+.block_intro p
 {
     margin: 20px 0px 0px;
     max-width: 930px;
@@ -62,7 +52,7 @@ h1
     font-size: 58px;
     line-height: 88px;
 }
-.block1 p
+.block_welcome p
 {
     font-style: normal;
     font-weight: 400;
@@ -70,21 +60,18 @@ h1
     line-height: 28px;
     margin: 20px 0px;
 }
-
-.btn1
+.btn_readDocs
 {
     width: 220px;
     height: 50px;
     margin-top: 40px;
 }
-
-.btn2
+.btn_send
 {
     width: 100%;
     height: 50px;
     margin-top: 50px;
 }
-
 .btn
 {
     font-family: inherit;
@@ -100,19 +87,19 @@ h1
     border: none;
     outline: none;
 }
-.btn:hover{
+.btn:hover
+{
     opacity: 70%;
     text-decoration: underline;
 }
-.block2 p
+.block_intro p
 {
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 37px;
-
 }
-.block3
+.block_solType
 {
     display: flex;
     align-content: space-between;
@@ -120,25 +107,21 @@ h1
     grid-row-gap: 100px;
     flex-wrap: wrap;
     margin-top: 217px;
-
 }
-
 .graybox
 {
     background: #2D3137;
     border: 1px solid #42464B;
     border-radius: 12px;
-
 }
-.image33_1
+.img_sol1
 {
     position: relative;
     top: -76px;
     margin-bottom: -76px;
 }
-.image33_2
+.img_sol2
 {
-    /*border: 1px solid white;*/
     position: relative;
     top: -76px;
     margin-bottom: -76px;
@@ -151,13 +134,8 @@ h2
     line-height: 58px;
     text-transform: uppercase;
 }
-.block33 p
-{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-}
-.metrics
+
+.block_metricsItems
 {
     display: flex;
     text-align: center;
@@ -165,7 +143,7 @@ h2
     flex-basis: 100%;
     padding-bottom: 100px;
 }
-.metrics p
+.block_metricsItems p
 {
     text-transform: uppercase;
     font-style: normal;
@@ -173,49 +151,48 @@ h2
     font-size: 18px;
     line-height: 28px;
 }
-.block31
+.block_sol1
 {
     flex: 1;
     padding: 0px 35px 120px 45px;
 }
-.block32
+.block_sol2
 {
     flex: 1;
     padding: 0px 35px 120px 45px;
 }
-.block4
+.block_metrics
 {
     text-align: center;
     padding-top: 80px;
 }
-.block5
+.block_team
 {
-    /*border: 1px solid white;*/
     margin-top: 80px;
     text-align: center;
 }
-.team
+.block_teamMembers
 {
     margin-top: 60px;
     display: flex;
     text-align: center;
     justify-content: space-around;
     flex-basis: 100%;
-    /*flex-wrap: wrap;*/
 }
-
-.image33_1, .image33_2
+.img_sol1,
+.img_sol2
 {
     text-align: center;
 }
-
-.block11 {
+.block_welcomeLeft
+{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
 }
-#name{
+#p_memberName
+{
     margin: 40px 0px 0px;
     font-style: normal;
     font-weight: 700;
@@ -223,7 +200,7 @@ h2
     line-height: 27px;
     text-transform: uppercase;
 }
-.team p
+.block_teamMembers p
 {
     margin: 10px 0px 0px;
     font-style: normal;
@@ -231,8 +208,9 @@ h2
     font-size: 18px;
     line-height: 26px;
 }
-
-input, textarea{
+input,
+textarea
+{
     padding: 13px 20px;
     font-family: inherit;
     font-style: normal;
@@ -246,50 +224,49 @@ input, textarea{
     border-radius: 6px;
     margin-top: 20px;
 }
-#msg{
+#msg
+{
     height: 100px;
 }
-.block6
+.block_contact
 {
     padding: 100px 12px 120px 50px;
     margin-top: 100px;
     display: flex;
-    /*flex-wrap: wrap;*/
     justify-content: space-between;
     column-gap: 30px;
     row-gap: 30px;
 }
-
-
-.block61
+.block_contactForm
 {
     display: flex;
     flex-direction: column;
     flex-basis: 490px;
 }
-.block62
+.block_contactImg
 {
-    /*flex-basis: 1000px;*/
     display: flex;
     justify-content: end;
     align-items: center;
-
 }
-.social{
+.block_social
+{
     display: flex;
     justify-content: space-between;
     column-gap: 30px;
 }
-.footer{
+.block_footer
+{
     display: flex;
     margin: 20px 0;
     justify-content: space-between;
 }
-.footer p{
+.block_footer p
+{
     margin: 0;
 }
-
-.social_icon:hover {
+.social_icon:hover
+{
     opacity: 70%;
 }
 img
@@ -297,173 +274,188 @@ img
     max-width: 100%;
     object-fit: contain;
 }
-
-.block61 h1{
+.block_contactForm h1
+{
     margin-bottom: 60px;
 }
-
-label{
+label
+{
     display: none;
 }
 
-
 @media (max-width: 767px) {
-
-    .social{
+    .block_social
+    {
         column-gap: 12px;
     }
-    /*h1{*/
-    /*    color: red;*/
-    /*}*/
-    .block_logo{
+    .block_logo
+    {
         max-width: 70%;
     }
-    .block1{
+    .block_welcome
+    {
         margin-top: 80px;
         display: grid;
         grid-template-columns: 100%;
-        /*flex-direction: column;*/
         row-gap: 70px;
     }
-    h1{
+    h1
+    {
         font-size: 48px;
         line-height: 120%;
     }
-    h2{
+    h2
+    {
         font-size: 30px;
     }
-    .block2{
+    .block_intro
+    {
         margin-top: 85px;
     }
-    .block6{
+    .block_contact
+    {
         flex-direction: column;
     }
-    .block31
+    .block_sol1
     {
         padding-bottom: 60px;
     }
-    .block32
+    .block_sol2
     {
         padding-bottom: 60px;
     }
-    .block6 {
+    .block_contact
+    {
         padding: 40px 10px 60px 10px;
     }
-    .block61
+    .block_contactForm
     {
         text-align: center;
     }
-    .block61 h1
+    .block_contactForm h1
     {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    .team
+    .block_teamMembers
     {
         display: grid;
         grid-template-columns: 50% 50%;
         row-gap: 50px;
         column-gap: 15px;
     }
-    .team img{
+    .block_teamMembers img
+    {
         max-width: 70%;
     }
-    .metrics
+    .block_metricsItems
     {
         display: grid;
         grid-template-columns: 50% 50%;
         padding-bottom: 70px;
     }
-    .block4{
+    .block_metrics
+    {
         padding-top: 50px;
     }
-    .block3{
+    .block_solType
+    {
         margin-top: 150px;
     }
-
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
-    .metrics
+    .block_metricsItems
     {
         display: grid;
         grid-template-columns: 50% 50%;
     }
-    .team
+    .block_teamMembers
     {
         display: grid;
         grid-template-columns: 50% 50%;
         row-gap: 50px;
         column-gap: 15px;
     }
-    .team img{
+    .block_teamMembers img
+    {
         max-width: 70%;
     }
-
-    /*h1{*/
-    /*    color: blue;*/
-    /*}*/
-    h2{
+    h2
+    {
         font-size: 38px;
     }
-    .block1{
+    .block_welcome
+    {
         margin-top: 80px;
         display: grid;
         grid-template-columns: 100%;
-        /*flex-direction: column;*/
         row-gap: 50px;
     }
-    .block2{
+    .block_intro
+    {
         margin-top: 120px;
     }
-    .block12
+    .block_welcomeRight
     {
         text-align: center;
     }
-    .block12 img{
+    .block_welcomeRight img
+    {
         max-width: 80%;
         object-fit: contain;
     }
-    .block3{
+    .block_solType
+    {
         flex-direction: column;
     }
-    .block6{
+    .block_contact
+    {
         flex-direction: column;
         padding: 60px 12px 80px 12px;
         row-gap: 50px;
     }
-    .block_logo{
+    .block_logo
+    {
         margin-top: 50px;
         max-width: 70%;
     }
 }
+
 @media (min-width: 991px) and (max-width: 1199px) {
 
-    .team img{
+    .block_teamMembers img
+    {
         max-width: 90%;
     }
-    h1{
-        /*color: green;*/
+    h1
+    {
         font-size: 52px;
         line-height: 140%;
     }
-    h2{
+    h2
+    {
         font-size: 42px;
     }
-    .block31{
+    .block_sol1
+    {
         padding-bottom: 80px;
     }
-    .block32{
+    .block_sol2
+    {
         padding-bottom: 80px;
     }
-    .block6
+    .block_contact
     {
         padding-top: 80px;
         padding-bottom: 100px;
     }
-    .wrapper {
+    .block_wrapper
+    {
         width: 85%;
     }
-    .block1{
+    .block_welcome
+    {
         column-gap: 40px;
     }
 

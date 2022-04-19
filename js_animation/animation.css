@@ -42,13 +42,14 @@ body{
     border-radius: 12px;
     display: flex;
     visibility: hidden;
-    position: fixed;
+    position: absolute;
     flex-direction: column;
     text-align: center;
     padding: 5px 5px;
     box-sizing: border-box;
     transition: visibility 1s, opacity 1s;
     transition-timing-function: ease-out;
+    cursor: pointer;
 }
 
 .member1 p{

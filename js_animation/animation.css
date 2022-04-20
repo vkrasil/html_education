@@ -1,14 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
-div
-{
-    /*border: white 1px solid;*/
-
-
-}
 img{
-    /*border: white 1px solid;*/
-   /* width: 100%;*/
+
     max-width: 100%;
     transition: all 0.5s linear;
     box-sizing: border-box;
@@ -25,14 +18,11 @@ body{
     text-align: center;
 }
 .block_members{
-    transition: all 1s;
-    transition-timing-function: ease-out;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
     row-gap: 20px;
     column-gap: 20px;
-    /*align-content: center;*/
     align-items: center;
 
 }
@@ -50,12 +40,10 @@ body{
     transition: visibility 1s, opacity 1s;
     transition-timing-function: ease-out;
     cursor: pointer;
+    opacity: 0%;
+    overflow: hidden;
 }
 
-.member1 p{
-
-    /*display: none;*/
-}
 .menu{
     display: flex;
     border: 1px solid #42464B;
@@ -86,6 +74,19 @@ body{
 .div_member2,
 .div_member3,
 .div_member4 {
-    transition: opacity 0.5s, visibility 1s;
+    height: 100%;
+    transition: opacity 0.5s;
     transition-timing-function: ease-in;
+}
+
+@media (max-width: 1000px) {
+    .menu
+    {
+        display: none;
+    }
+    .block_members
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }

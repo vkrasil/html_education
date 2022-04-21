@@ -18,7 +18,7 @@ if (isTouchScreen)
 } else
 {
     //no, device without TouchScreen
-    for (let eachImg of imgMembers) eachImg.onmousemove=onMouseMoveMember
+    for (let eachImg of imgMembers) eachImg.onmouseenter=onMouseMoveMember
     for (let eachAbout of divAbouts) eachAbout.onmouseleave=onMouseLeaveMember
 }
 

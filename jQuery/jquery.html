@@ -2,13 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>jQuery Education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS Animation study</title>
+    <link href="jquery.css" rel="stylesheet">
 </head>
 <body>
-<div class="test_div"><h1>Hello</h1></div>
+
+<div class="menu">
+    <input id="btn_row" class="btn" type="button" value="Row">
+    <input id="btn_grid" class="btn" type="button" value="Grid">
+</div>
+<div class="block_team">
+    <h1>This effect made only with JS+CSS</h1>
+    <div class="block_members">
+        <div class="div_member1">
+            <div><img id="img_member1" src="../lp/images/member1.svg"></div>
+            <p id="dm1p_name">Eugene</p>
+            <P id="dm1p_pos">Chief</P>
+        </div>
+        <div class="div_member2">
+            <div><img id="img_member2" src="../lp/images/member2.svg"></div>
+            <p id="dm2p_name">Max</p>
+            <P id="dm2p_pos">Chief Mechanic</P>
+        </div>
+        <div class="div_member3">
+            <div ><img id="img_member3" src="../lp/images/member3.svg"></div>
+            <p id="dm3p_name">Yaro</p>
+            <P id="dm3p_pos">Chief Farmer</P>
+        </div>
+        <div class="div_member4">
+            <div><img id="img_member4" src="../lp/images/member4.svg"></div>
+            <p id="dm4p_name">John</p>
+            <P id="dm4p_pos">Chief Sower</P>
+        </div>
+    </div>
+</div>
+<div class="about_member" id="div_about1">
+    <p id="m1ab_name1">Eugene</p>
+    <P id="m1ab_pos1">Chief</P>
+    <p id="m1ab_text1">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </p>
+</div>
+<div class="about_member" id="div_about2">
+    <p id="m2ab_name2">Max</p>
+    <P id="m2ab_pos2">Chief Mechanic</P>
+    <p id="m2ab_text2">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </p>
+</div>
+<div class="about_member" id="div_about3">
+    <p id="m3ab_name3">Yaro</p>
+    <P id="m3ab_pos3">Chief Farmer</P>
+    <p id="m3ab_text3">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </p>
+</div>
+<div class="about_member" id="div_about4">
+    <p id="m4ab_name4">John</p>
+    <P id="m4ab_pos4">Chief Sower</P>
+    <p id="m4ab_text4">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </p>
+</div>
 <script src="jquery-3.6.0.js"></script>
-<script>
-$(".test_div").fadeOut(3000).delay(1000).fadeIn(3000)
-</script>
+<script src="script.js"></script>
 </body>
 </html>

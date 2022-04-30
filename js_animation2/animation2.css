@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+div {
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 142%;
+    text-transform: uppercase;
+}
+
+.member_name {
+    color: #1D3133;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 145%;
+}
+
+.member_pos {
+    color: #1D3133;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 162%;
+}
+.div_member {
+    background: #F5F5F5;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+}
+.img_member {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 180px;
+    margin: 0 auto;
+}
+.div_social {
+    border-radius: 50%;
+    background: #C4C4C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 30px;
+    height: 30px;
+}
+
+.div_team {
+    display: flex;
+    flex-direction: row;
+    max-width: 1288px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.div_soc_icons {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+.div_nav_button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #5AC1A8;
+    transition: all 1s ease;
+}
+
+.right svg{
+    transform: rotate(-180deg);
+}
+
+.div_nav_button:hover{
+    background: #5AC1A8;
+}
+.div_nav_button:hover path{
+    fill: white;
+}
+#left_arrow,
+#right_arrow {
+    position: fixed;
+}
+#member5{
+    order: -1;
+}
+.left_bar,
+.right_bar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background: white;
+    z-index: 5;
+}
+.left_bar {
+    justify-content: end;
+    padding-right: 30px;
+}
+.right_bar {
+    justify-content: start;
+    padding-left: 30px;
+}
